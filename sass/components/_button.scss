@@ -1,0 +1,24 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color $transition-duration;
+
+  &:focus,
+  &:hover {
+    background-color: red;
+  }
+
+  // Чисто от себя декоративный эффект нажатия
+  &:active {
+    opacity: 0.8;
+    transform: scale(.95);
+  }
+
+}
+
