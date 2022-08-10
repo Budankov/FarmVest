@@ -1,0 +1,26 @@
+.hero {
+  // .hero__title
+  &__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.114;
+    margin-bottom: 69px;
+    // .hero__title--green
+    &--green {
+      color: $text-color-green;
+    }
+  }
+  // .hero__text
+  &__text {
+    max-width: 570px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.container {
+}
+.container-hero {
+  max-width: 850px;
+  text-align: center;
+}

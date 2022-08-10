@@ -1,0 +1,31 @@
+.email-form {
+  max-width: 533px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  padding: 6px;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  // .email-form__input
+  &__input {
+    border: none;
+    flex: 1 1 auto;
+    padding: 0 20px;
+    &::placeholder {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.11;
+      color: $ef-text-color;
+    }
+  }
+  // .email-form__btn
+  &__btn {
+    font-weight: 500;
+    line-height: 1.11;
+    padding: 22px 25px;
+  }
+}
