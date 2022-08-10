@@ -1,11 +1,11 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/placeholders";
+
 // Base
 @import "./base/common";
 @import "./base/container";
 @import "./base/visually-hidden";
-
-// Utils
-@import "./utils/variables";
-@import "./utils/placeholders";
 
 // Components
 @import "./components/page-header";

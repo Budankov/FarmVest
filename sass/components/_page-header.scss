@@ -1,1 +1,65 @@
- 
+ .page-header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .button {
+    padding: 21px 25px;
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;  
+    color: $text-color-white;
+  }
+  
+  & .button-transparent {
+    padding: 21px 44px;
+    border: 1px solid $bcg-border-color-white;
+    background-color: transparent;
+    margin-right: 16px;
+  }
+ }
+
+ .container {}
+
+ .page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .main-nav {
+  display: flex;
+ }
+
+ .logo {
+  @extend %link;
+  font-family: $font-lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.194;
+  color: $text-color-white;
+ }
+
+ .site-nav {
+  display: flex;
+  column-gap: 20px;
+
+   // .site-nav__item
+   &__item {
+    @extend %list;
+    display: block;
+   }
+
+   // .site-nav__link
+   &__link {
+    @extend %link;
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #FFFFFF;
+   }
+ }

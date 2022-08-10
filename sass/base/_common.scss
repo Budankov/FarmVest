@@ -1,12 +1,11 @@
 body {
-  background-color: white;
-  color: black;
-  // font-family: $primary-font;
+  background-color: $bcg-color-grey;
+  color: $text-color-white;
+  font-family: $font-spartan;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 180%;
 }
 
 img {

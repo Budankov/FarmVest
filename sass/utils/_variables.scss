@@ -1,5 +1,5 @@
 // Fonts
-$font-spartan: 'League Spartan', sans-serif;;
+$font-spartan: 'League Spartan', sans-serif;
 $font-lato: 'Nunito Sans', sans-serif;
 
 //Transition
@@ -7,15 +7,18 @@ $transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 //Fundamental colors
 // background
-$bcg-color-grey: #000000;
-$bcg-color-light: #A8FF35;
-$bcg-color-white: #FFFFFF;
-$bcg-color-grey: #FAFAFA;
+$bcg-color-grey: #263238;
+$bcg-color-light-grey: rgba(255, 255, 255, 0.05);
+$bcg-color-green: #23B123;
+
 // text
-$text-color-black: #000000;
+$text-color-green: #23B123;
 $text-color-white: #FFFFFF;
 
 // Button
+$btn-color-green: #23B123;
+$btn-color-green-hover: #2bd82b;
+$bcg-border-color-white: #FFFFFF;
 
 // Header
 

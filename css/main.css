@@ -1,11 +1,22 @@
+.site-nav__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav__link, .logo {
+  text-decoration: none;
+  font-style: normal;
+}
+
 body {
-  background-color: white;
-  color: black;
+  background-color: #263238;
+  color: #FFFFFF;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 180%;
 }
 
 img {
@@ -56,7 +67,7 @@ ol {
 }
 
 .container-big {
-  max-width: 1620px;
+  max-width: 1650px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -75,6 +86,73 @@ ol {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.page-header .button {
+  padding: 21px 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #FFFFFF;
+}
+.page-header .button-transparent {
+  padding: 21px 44px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+.page-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.194;
+  color: #FFFFFF;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.site-nav__item {
+  display: block;
+}
+.site-nav__link {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #FFFFFF;
 }
 
 .mobile-menu {
@@ -152,6 +230,8 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-left: auto;
   margin-right: auto;
   border: none;
@@ -159,9 +239,11 @@ ol {
   cursor: pointer;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: #23B123;
+  border-radius: 10px;
 }
 .button:focus, .button:hover {
-  background-color: red;
+  background-color: #2bd82b;
 }
 .button:active {
   opacity: 0.8;
