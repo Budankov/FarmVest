@@ -1,9 +1,12 @@
 .hero {
   // .hero__title
   &__title {
+    max-width: 840px;
     font-weight: 700;
     font-size: 70px;
     line-height: 1.114;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 69px;
     // .hero__title--green
     &--green {
@@ -18,9 +21,49 @@
     margin-right: auto;
   }
 }
-.container {
-}
+
 .container-hero {
-  max-width: 850px;
   text-align: center;
+  position: relative;
+}
+
+.hero-block-icons {
+}
+.icons-main-block {
+  // .icons-main-block__item
+  &__item {
+    position: absolute;
+  }
+  // .icons-main-block__svg
+  &__svg {
+    fill: $hero-icon-color;
+  }
+}
+.icons-main-block--1 {
+  left: -77px;
+  top: 434px;
+}
+.icons-main-block--2 {
+  left: 137px;
+  top: 128px;
+}
+.icons-main-block--3 {
+  bottom: 0;
+  left: 303px;
+}
+.icons-main-block--4 {
+  top: -69px;
+  right: 323px;
+}
+.icons-main-block--5 {
+  top: 168px;
+  right: 179px;
+}
+.icons-main-block--6 {
+  bottom: -20px;
+  right: 159px;
+}
+.icons-main-block--7 {
+  top: 116px;
+  right: -68px;
 }
