@@ -82,6 +82,10 @@
     &::after {
       transform: translate(-50%, -57%);
     }
+
+    @media screen and (max-width: 400px) {
+      display: none;
+    }
   }
 
   .site-nav {
