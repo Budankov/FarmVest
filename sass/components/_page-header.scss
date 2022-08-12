@@ -1,71 +1,101 @@
 .page-header {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   & .button {
-    padding: 21px 25px;
+    padding: 10px 15px;
     font-family: $font-lato;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     color: $text-color-white;
+
+    @media screen and (min-width: 850px) {
+      padding: 21px 25px;
+    }
   }
 
   & .button-transparent {
-    padding: 21px 44px;
+    padding: 10px 32px;
     border: 1px solid $btn-border-color-white;
     background-color: transparent;
-    margin-right: 16px;
 
     &:focus,
     &:hover {
       background-color: $btn-color-transparent-hover;
     }
-  }
-}
 
-.container {
-}
-
-.page-header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav {
-  display: flex;
-}
-
-.logo {
-  @extend %link;
-  font-family: $font-lato;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.194;
-  color: $text-color-white;
-}
-
-.site-nav {
-  display: flex;
-  column-gap: 20px;
-
-  // .site-nav__item
-  &__item {
-    @extend %list;
-    display: block;
+    @media screen and (min-width: 850px) {
+      padding: 21px 44px;
+    }
   }
 
-  // .site-nav__link
-  &__link {
+  .container {
+  }
+
+  .page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  .logo {
     @extend %link;
     font-family: $font-lato;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.194;
+    color: $text-color-white;
+  }
+
+  .site-nav {
+    display: flex;
+    column-gap: 20px;
+
+    // .site-nav__item
+    &__item {
+      @extend %list;
+      display: block;
+    }
+
+    // .site-nav__link
+    &__link {
+      @extend %link;
+      font-family: $font-lato;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.22;
+      color: #ffffff;
+    }
+  }
+
+  .pg-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 850px) {
+      flex-direction: row;
+    }
   }
 }

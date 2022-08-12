@@ -3,7 +3,7 @@
   &__title {
     max-width: 840px;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 36px;
     line-height: 1.114;
     margin-left: auto;
     margin-right: auto;
@@ -11,6 +11,10 @@
     // .hero__title--green
     &--green {
       color: $text-color-green;
+    }
+
+    @media screen and (min-width: 767.98px) {
+      font-size: 70px;
     }
   }
   // .hero__text
@@ -27,43 +31,198 @@
   position: relative;
 }
 
-.hero-block-icons {
+.icons-main-block__item {
+  position: absolute;
 }
-.icons-main-block {
-  // .icons-main-block__item
-  &__item {
-    position: absolute;
-  }
-  // .icons-main-block__svg
-  &__svg {
-    fill: $hero-icon-color;
+.icons-main-block__svg {
+  fill: $hero-icon-color;
+
+  @media screen and (max-width: 767.98px) {
+    opacity: 0.5;
   }
 }
-.icons-main-block--1 {
-  left: -77px;
-  top: 434px;
+
+@media screen and (max-width: 767.98px) {
+  .icons-main-block--1 {
+    left: -45px;
+    top: 284px;
+  }
+
+  .icons-main-block--2 {
+    left: -17px;
+    top: 108px;
+  }
+
+  .icons-main-block--3 {
+    bottom: -50px;
+    left: 93px;
+  }
+
+  .icons-main-block--4 {
+    top: -69px;
+    right: 103px;
+  }
+
+  .icons-main-block--5 {
+    top: 238px;
+    right: 129px;
+  }
+
+  .icons-main-block--6 {
+    bottom: 55px;
+    right: 49px;
+  }
+
+  .icons-main-block--7 {
+    top: 136px;
+    right: 38px;
+  }
 }
-.icons-main-block--2 {
-  left: 137px;
-  top: 128px;
+
+@media screen and (min-width: 768px) {
+  .icons-main-block--1 {
+    left: 17px;
+    top: 334px;
+  }
+
+  .icons-main-block--2 {
+    left: 47px;
+    top: 138px;
+  }
+
+  .icons-main-block--3 {
+    bottom: -50px;
+    left: 93px;
+  }
+
+  .icons-main-block--4 {
+    top: -49px;
+    right: 263px;
+  }
+
+  .icons-main-block--5 {
+    top: 238px;
+    right: 129px;
+  }
+
+  .icons-main-block--6 {
+    bottom: -20px;
+    right: 49px;
+  }
+
+  .icons-main-block--7 {
+    top: 86px;
+    right: 38px;
+  }
 }
-.icons-main-block--3 {
-  bottom: 0;
-  left: 303px;
+
+@media screen and (min-width: 1200px) {
+  .icons-main-block--1 {
+    left: 47px;
+    top: 334px;
+  }
+
+  .icons-main-block--2 {
+    left: 127px;
+    top: 88px;
+  }
+
+  .icons-main-block--3 {
+    bottom: 0;
+    left: 303px;
+  }
+
+  .icons-main-block--4 {
+    top: -39px;
+    right: 263px;
+  }
+
+  .icons-main-block--5 {
+    top: 258px;
+    right: 209px;
+  }
+
+  .icons-main-block--6 {
+    bottom: -20px;
+    right: 159px;
+  }
+
+  .icons-main-block--7 {
+    top: 86px;
+    right: 168px;
+  }
 }
-.icons-main-block--4 {
-  top: -69px;
-  right: 323px;
+
+@media screen and (min-width: 1420px) {
+  .icons-main-block--1 {
+    left: 47px;
+    top: 334px;
+  }
+
+  .icons-main-block--2 {
+    left: 127px;
+    top: 88px;
+  }
+
+  .icons-main-block--3 {
+    bottom: 0;
+    left: 303px;
+  }
+
+  .icons-main-block--4 {
+    top: -39px;
+    right: 263px;
+  }
+
+  .icons-main-block--5 {
+    top: 258px;
+    right: 209px;
+  }
+
+  .icons-main-block--6 {
+    bottom: -20px;
+    right: 109px;
+  }
+
+  .icons-main-block--7 {
+    top: 86px;
+    right: 78px;
+  }
 }
-.icons-main-block--5 {
-  top: 168px;
-  right: 179px;
-}
-.icons-main-block--6 {
-  bottom: -20px;
-  right: 159px;
-}
-.icons-main-block--7 {
-  top: 116px;
-  right: -68px;
+
+@media screen and (min-width: 1620px) {
+  .icons-main-block--1 {
+    left: -77px;
+    top: 434px;
+  }
+
+  .icons-main-block--2 {
+    left: 137px;
+    top: 128px;
+  }
+
+  .icons-main-block--3 {
+    bottom: 0;
+    left: 203px;
+  }
+
+  .icons-main-block--4 {
+    top: -69px;
+    right: 323px;
+  }
+
+  .icons-main-block--5 {
+    top: 168px;
+    right: 179px;
+  }
+
+  .icons-main-block--6 {
+    bottom: -20px;
+    right: 159px;
+  }
+
+  .icons-main-block--7 {
+    top: 116px;
+    right: -68px;
+  }
 }
