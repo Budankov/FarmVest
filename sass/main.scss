@@ -8,11 +8,13 @@
 @import './base/visually-hidden';
 
 // Components
-@import './components/page-header';
-@import './components/parallax';
 @import './components/mobile-menu';
-@import './components/hero';
+@import './components/modal';
 @import './components/button';
 @import './components/email-form';
-@import './components/footer';
-@import './components/modal';
+
+// Layout
+@import './layout/page-header';
+@import './layout/hero';
+@import './layout/company';
+@import './layout/footer';

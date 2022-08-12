@@ -1,4 +1,11 @@
 .hero {
+  @extend %section-padding;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
   // .hero__title
   &__title {
     max-width: 840px;
