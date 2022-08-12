@@ -139,6 +139,7 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .page-header .main-nav {
   display: -webkit-box;
@@ -157,6 +158,25 @@ ol {
   font-size: 36px;
   line-height: 1.194;
   color: #ffffff;
+}
+.page-header .logo::before, .page-header .logo::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff;
+  width: 585px;
+  height: 585px;
+}
+.page-header .logo::before {
+  -webkit-transform: translate(-39%, -63%);
+          transform: translate(-39%, -63%);
+}
+.page-header .logo::after {
+  -webkit-transform: translate(-50%, -57%);
+          transform: translate(-50%, -57%);
 }
 .page-header .site-nav {
   display: -webkit-box;
