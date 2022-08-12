@@ -71,7 +71,7 @@
       border-radius: 50%;
       top: 0;
       left: 0;
-      border: 1px solid #ffffff;
+      border: 1px solid $bcg-color-white;
       width: 585px;
       height: 585px;
     }
@@ -82,8 +82,11 @@
     &::after {
       transform: translate(-50%, -57%);
     }
+  }
 
-    @media screen and (max-width: 400px) {
+  @media screen and (max-width: 400px) {
+    .logo::after,
+    .logo::before {
       display: none;
     }
   }

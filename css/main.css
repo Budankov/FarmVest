@@ -179,7 +179,8 @@ ol {
           transform: translate(-50%, -57%);
 }
 @media screen and (max-width: 400px) {
-  .page-header .logo {
+  .page-header .logo::after,
+.page-header .logo::before {
     display: none;
   }
 }
