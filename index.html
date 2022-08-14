@@ -42,6 +42,12 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesome, чтобы можно было использовать значок для нашей кнопки back-to-top -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -189,8 +195,8 @@
 
       <!-- Company -->
       <section class="company">
-        <div class="container container-company">
-          <ul data-aos="zoom-in" class="company-list">
+        <div data-aos="zoom-in" class="container container-company">
+          <ul class="company-list">
             <li class="company-list__item">
               <img src="./images/main-page/company/marketwatch.png" alt="Company" />
             </li>
@@ -211,14 +217,8 @@
       </section>
 
       <!-- How FarmVest Works -->
-      <section
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-offset="50"
-        data-aos-easing="ease-in-sine"
-        class="how-works"
-      >
-        <div class="container how-works-container">
+      <section class="how-works">
+        <div data-aos="fade-right" class="container how-works-container">
           <div class="hw-left-section">
             <h2 class="main-title">How <span class="main-title--green">FarmVest</span> Works</h2>
             <p class="main-text">
@@ -300,14 +300,8 @@
       </section>
 
       <!-- Your pathway to Future Investment -->
-      <section
-        data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-offset="50"
-        data-aos-easing="ease-in-sine"
-        class="pathway"
-      >
-        <div class="container pathway-container">
+      <section class="pathway">
+        <div data-aos="fade-left" class="container pathway-container">
           <div class="pathway-left-section">
             <img
               class="pathway-left-section__img"
@@ -355,14 +349,8 @@
       </section>
 
       <!-- Why choose FarmVest -->
-      <section
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-offset="50"
-        data-aos-easing="ease-in-sine"
-        class="choose"
-      >
-        <div class="container choose-container">
+      <section class="choose">
+        <div data-aos="fade-right" class="container choose-container">
           <div class="choose-left-section">
             <h2 class="main-title">Why choose <span class="main-title--green">FarmVest</span></h2>
             <p class="main-text">
@@ -449,6 +437,11 @@
         </form>
       </div>
     </div>
+
+    <!-- Script back-to-top -->
+    <a id="back-to-top"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/back-to-top.js"></script>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

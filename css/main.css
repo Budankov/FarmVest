@@ -390,6 +390,47 @@ ol {
   }
 }
 
+#back-to-top {
+  display: inline-block;
+  background-color: rgba(0, 128, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #23b123;
+}
+
+#back-to-top:hover {
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+#back-to-top:active {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .page-header {
   padding-top: 30px;
   padding-bottom: 30px;
