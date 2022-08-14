@@ -1,0 +1,179 @@
+.pathway {
+  @extend %section-padding;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.pathway-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 50%;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.pathway-left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $how-works-bcg-color;
+  border-radius: 20px;
+  padding: 66px 30px;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (min-width: 1450px) {
+    padding: 99px 40px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    border: 1px solid $bcg-color-white;
+    width: 585px;
+    height: 585px;
+  }
+
+  &::before {
+    transform: translate(40%, -39%);
+
+    @media screen and (min-width: 768px) {
+      transform: translate(75%, -18%);
+    }
+  }
+  &::after {
+    transform: translate(43%, -30%);
+
+    @media screen and (min-width: 768px) {
+      transform: translate(75%, -5%);
+    }
+  }
+
+  // .pathway-left-section__img
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+  }
+}
+.pathway-right-section {
+  @media screen and (min-width: 1200px) {
+    flex: 1 1 50%;
+  }
+
+  @media screen and (min-width: 1450px) {
+    max-width: 600px;
+  }
+
+  & .main-text {
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+  // .hw-left-section__list
+  &__list {
+    @media screen and (min-width: 1200px) {
+      max-width: 400px;
+    }
+  }
+}
+
+.spoiler {
+}
+
+.spoiler__item {
+  background: $bcg-color-light-grey;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.spoiler__hide,
+.spoiler__hide + .spoiler__label ~ .spoiler__text {
+  display: none;
+}
+/* вид текста .spoiler__label */
+.spoiler__hide + .spoiler__label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 177%;
+  color: $text-color-white;
+  padding: 24px 30px;
+}
+/* вид текста .spoiler__label при активном переключателе */
+.spoiler__hide:checked + .spoiler__label {
+  color: $text-color-green;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.spoiler__hide:checked + .spoiler__label + .spoiler__text {
+  display: block;
+  background: #485055;
+  padding: 10px;
+  border-radius: 10px;
+  /* чуточку анимации при появлении */
+  -webkit-animation: fade ease-in 0.5s;
+  -moz-animation: fade ease-in 0.5s;
+  animation: fade ease-in 0.5s;
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.spoiler__hide + .spoiler__label:before {
+  color: $bcg-color-green;
+  content: url(../../images/main-page/pathway/arrow-down.svg);
+  display: block;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  margin: 3px 5px;
+  text-align: center;
+  width: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.spoiler__hide:checked + .spoiler__label:before {
+  content: url(../../images/main-page/pathway/arrow-up.svg);
+}
