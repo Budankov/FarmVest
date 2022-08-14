@@ -9,23 +9,28 @@
 
 .pathway-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   flex: 1 1 50%;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    gap: 30px;
   }
 }
 .pathway-left-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $how-works-bcg-color;
+  background-color: $pathway-works-bcg-color;
   border-radius: 20px;
   padding: 66px 30px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 1450px) {
     padding: 99px 40px;
@@ -45,18 +50,10 @@
   }
 
   &::before {
-    transform: translate(40%, -39%);
-
-    @media screen and (min-width: 768px) {
-      transform: translate(75%, -18%);
-    }
+    transform: translate(-41%, 37%);
   }
   &::after {
-    transform: translate(43%, -30%);
-
-    @media screen and (min-width: 768px) {
-      transform: translate(75%, -5%);
-    }
+    transform: translate(-40%, 49%);
   }
 
   // .pathway-left-section__img

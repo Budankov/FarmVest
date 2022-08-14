@@ -895,9 +895,9 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -911,6 +911,7 @@ ol {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -930,6 +931,11 @@ ol {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .pathway-left-section {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1450px) {
   .pathway-left-section {
     padding: 99px 40px;
@@ -947,24 +953,12 @@ ol {
   height: 585px;
 }
 .pathway-left-section::before {
-  -webkit-transform: translate(40%, -39%);
-          transform: translate(40%, -39%);
-}
-@media screen and (min-width: 768px) {
-  .pathway-left-section::before {
-    -webkit-transform: translate(75%, -18%);
-            transform: translate(75%, -18%);
-  }
+  -webkit-transform: translate(-41%, 37%);
+          transform: translate(-41%, 37%);
 }
 .pathway-left-section::after {
-  -webkit-transform: translate(43%, -30%);
-          transform: translate(43%, -30%);
-}
-@media screen and (min-width: 768px) {
-  .pathway-left-section::after {
-    -webkit-transform: translate(75%, -5%);
-            transform: translate(75%, -5%);
-  }
+  -webkit-transform: translate(-40%, 49%);
+          transform: translate(-40%, 49%);
 }
 .pathway-left-section__img {
   max-width: 100%;
