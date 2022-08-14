@@ -10,8 +10,8 @@
   cursor: pointer;
   transition: background-color $transition-duration;
   background: $btn-color-green;
+  color: $text-color-white;
   border-radius: 10px;
-  
 
   &:focus,
   &:hover {
@@ -21,7 +21,6 @@
   // Чисто от себя декоративный эффект нажатия
   &:active {
     opacity: 0.8;
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 }
-

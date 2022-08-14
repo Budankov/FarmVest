@@ -32,7 +32,15 @@
     <!-- WickedCSS animations -->
     <link rel="stylesheet" href="css/wickedcss.min.css" />
 
+    <!-- AOS animations -->
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- cssanimation.io -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -41,7 +49,7 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container-big page-header-container">
-        <a class="logo" href="./index.html">FarmVest</a>
+        <a class="logo cssanimation lePushReleaseFrom sequence" href="./index.html">FarmVest</a>
         <nav class="main-nav">
           <ul class="site-nav">
             <li class="site-nav__item"><a class="site-nav__link" href="">Home</a></li>
@@ -290,6 +298,7 @@
           </div>
         </div>
       </section>
+
       <!-- Your pathway to Future Investment -->
       <section
         data-aos="fade-left"
@@ -341,6 +350,39 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose FarmVest -->
+      <section
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+        class="choose"
+      >
+        <div class="container choose-container">
+          <div class="choose-left-section">
+            <h2 class="main-title">Why choose <span class="main-title--green">FarmVest</span></h2>
+            <p class="main-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit
+              dictum tincidunt. Ut arcu, suscipit ac
+            </p>
+            <ul class="choose-left-section__list">
+              <li class="choose-left-section__item">Real-time Checkup</li>
+              <li class="choose-left-section__item">Flexibility in Investment</li>
+              <li class="choose-left-section__item">Encrypted and Secured</li>
+              <li class="choose-left-section__item">Withdraw Anytime</li>
+            </ul>
+            <button class="button choose-left-section__button" type="button">Learn More</button>
+          </div>
+          <div class="choose-right-section">
+            <img
+              class="choose-right-section__img"
+              src="./images/main-page/choose/img.jpg"
+              alt="Photo"
+            />
           </div>
         </div>
       </section>
@@ -410,9 +452,17 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+
+    <!-- AOS animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <!-- cssanimation.io -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"
+    ></script>
   </body>
 </html>
