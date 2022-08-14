@@ -29,6 +29,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- WickedCSS animations -->
+    <link rel="stylesheet" href="css/wickedcss.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -136,37 +141,37 @@
           </form>
           <div class="hero-block-icons icons-main-block">
             <div class="icons-main-block__item icons-main-block--1">
-              <svg class="icons-main-block__svg" width="32" height="32">
+              <svg class="icons-main-block__svg rotation" width="32" height="32">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-1"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--2">
-              <svg class="icons-main-block__svg" width="40" height="40">
+              <svg class="icons-main-block__svg pulse" width="40" height="40">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-2"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--3">
-              <svg class="icons-main-block__svg" width="17" height="17">
+              <svg class="icons-main-block__svg floater" width="17" height="17">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-3"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--4">
-              <svg class="icons-main-block__svg" width="48" height="48">
+              <svg class="icons-main-block__svg pulse" width="48" height="48">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-4"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--5">
-              <svg class="icons-main-block__svg" width="16" height="16">
+              <svg class="icons-main-block__svg floater" width="16" height="16">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-5"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--6">
-              <svg class="icons-main-block__svg" width="40" height="40">
+              <svg class="icons-main-block__svg pulse" width="40" height="40">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-6"></use>
               </svg>
             </div>
             <div class="icons-main-block__item icons-main-block--7">
-              <svg class="icons-main-block__svg" width="32" height="32">
+              <svg class="icons-main-block__svg rotation" width="32" height="32">
                 <use xlink:href="./images/icons/sprite.svg#hero-svg-icon-7"></use>
               </svg>
             </div>
@@ -177,7 +182,7 @@
       <!-- Company -->
       <section class="company">
         <div class="container container-company">
-          <ul class="company-list">
+          <ul data-aos="zoom-in" class="company-list">
             <li class="company-list__item">
               <img src="./images/main-page/company/marketwatch.png" alt="Company" />
             </li>
@@ -198,7 +203,13 @@
       </section>
 
       <!-- How FarmVest Works -->
-      <section class="how-works">
+      <section
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+        class="how-works"
+      >
         <div class="container how-works-container">
           <div class="hw-left-section">
             <h2 class="main-title">How <span class="main-title--green">FarmVest</span> Works</h2>
@@ -280,7 +291,13 @@
         </div>
       </section>
       <!-- Your pathway to Future Investment -->
-      <section class="pathway">
+      <section
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+        class="pathway"
+      >
         <div class="container pathway-container">
           <div class="pathway-left-section">
             <img
@@ -393,5 +410,9 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
