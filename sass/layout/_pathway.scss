@@ -91,6 +91,7 @@
 .spoiler__item {
   background: $bcg-color-light-grey;
   border-radius: 10px;
+  transition: $transition-duration;
 
   &:not(:last-child) {
     margin-bottom: 24px;

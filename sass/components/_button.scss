@@ -12,6 +12,7 @@
   background: $btn-color-green;
   color: $text-color-white;
   border-radius: 10px;
+  transition: background-color $transition-duration;
 
   &:focus,
   &:hover {

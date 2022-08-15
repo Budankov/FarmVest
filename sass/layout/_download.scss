@@ -1,9 +1,10 @@
 .download {
   @extend %section-padding;
+  padding-bottom: 200px;
 
   @media screen and (max-width: 768px) {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -75,6 +76,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 24px;
   z-index: 2;
 
@@ -84,4 +86,10 @@
 }
 .app-img {
   max-width: 100%;
+  transition: transform $transition-duration;
+
+  &:focus,
+  &:hover {
+    transform: scale(1.2);
+  }
 }

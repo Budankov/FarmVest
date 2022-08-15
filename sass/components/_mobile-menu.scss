@@ -42,6 +42,7 @@
   &:focus,
   &:hover {
     fill: $bcg-color-green;
+    transition: $transition-duration;
   }
 }
 
