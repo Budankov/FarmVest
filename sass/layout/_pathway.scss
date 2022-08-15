@@ -95,6 +95,11 @@
   &:not(:last-child) {
     margin-bottom: 24px;
   }
+
+  &:focus,
+  &:hover {
+    border: 1px solid $bcg-color-green;
+  }
 }
 
 /* скрываем чекбоксы и блоки с содержанием */
