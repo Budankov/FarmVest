@@ -8,15 +8,15 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: background-color $transition-duration;
-  background: $btn-color-green;
-  color: $text-color-white;
+  transition: background-color var(--transition-duration);
+  background: var(--btn-color-green);
+  color: var(--text-color-white);
   border-radius: 10px;
-  transition: background-color $transition-duration;
+  transition: background-color var(--transition-duration);
 
   &:focus,
   &:hover {
-    background-color: $btn-color-green-hover;
+    background-color: var(--btn-color-green-hover);
   }
 
   // Чисто от себя декоративный эффект нажатия

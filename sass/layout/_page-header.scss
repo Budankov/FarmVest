@@ -9,12 +9,12 @@
 
   & .button {
     padding: 10px 15px;
-    font-family: $font-lato;
+    font-family: var(--font-lato);
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
-    color: $text-color-white;
+    color: var(--text-color-white);
 
     @media screen and (min-width: 850px) {
       padding: 21px 25px;
@@ -22,14 +22,15 @@
   }
 
   & .button-transparent {
+    color: var(--button-transparent-text);
     padding: 10px 32px;
-    border: 1px solid $btn-border-color-white;
+    border: 1px solid var(--btn-border);
     background-color: transparent;
-    transition: background-color $transition-duration;
+    transition: background-color var(--transition-duration);
 
     &:focus,
     &:hover {
-      background-color: $btn-color-transparent-hover;
+      background-color: var(--btn-color-transparent-hover);
     }
 
     @media screen and (min-width: 850px) {
@@ -57,12 +58,12 @@
 
   .logo {
     @extend %link;
-    font-family: $font-lato;
+    font-family: var(--font-lato);
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.194;
-    color: $text-color-white;
+    color: var(--logo);
 
     &::before,
     &::after {
@@ -72,7 +73,7 @@
       border-radius: 50%;
       top: 0;
       left: 0;
-      border: 1px solid $bcg-color-white;
+      border: 1px solid var(--circle);
       width: 585px;
       height: 585px;
     }
@@ -106,13 +107,13 @@
     // .site-nav__link
     &__link {
       @extend %link;
-      font-family: $font-lato;
+      font-family: var(--font-lato);
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 1.22;
-      color: $text-color-white;
-      transition: color $transition-duration;
+      color: var(--text-color);
+      transition: color var(--transition-duration);
       position: relative;
 
       &::after {
@@ -122,7 +123,7 @@
         bottom: 0;
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--link-after-hover);
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 0.5s;
@@ -135,7 +136,7 @@
 
       &:focus,
       &:hover {
-        color: $text-color-green;
+        color: var(--text-color-green);
       }
     }
   }
@@ -143,6 +144,7 @@
   .pg-btn-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
 
     @media screen and (max-width: 767.98px) {

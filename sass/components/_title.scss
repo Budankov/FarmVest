@@ -4,7 +4,7 @@
   line-height: 1.114;
 
   &--green {
-    color: $text-color-green;
+    color: var(--text-color-green);
   }
 
   @media screen and (min-width: 767.98px) {

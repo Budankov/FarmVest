@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: $download-bcg-color;
+  background: var(--img-bcg-color);
   border-radius: 20px;
   padding-top: 72px;
   padding-bottom: 66px;
@@ -35,7 +35,7 @@
     border-radius: 50%;
     top: 0;
     left: 0;
-    border: 1px solid $bcg-color-white;
+    border: 1px solid var(--circle);
     width: 585px;
     height: 585px;
   }
@@ -86,7 +86,7 @@
 }
 .app-img {
   max-width: 100%;
-  transition: transform $transition-duration;
+  transition: transform var(--transition-duration);
 
   &:focus,
   &:hover {

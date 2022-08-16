@@ -54,11 +54,11 @@
       font-weight: 700;
       font-size: 36px;
       line-height: 40px;
-      color: $text-color-white;
+      color: var(--choose-text);
       border-radius: 50%;
       width: 64px;
       height: 64px;
-      background-color: $bcg-color-light-grey;
+      background-color: var(--choose-bcg-item);
     }
   }
   // .choose-left-section__button

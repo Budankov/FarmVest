@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $pathway-works-bcg-color;
+  background-color: var(--img-bcg-color);
   border-radius: 20px;
   padding: 66px 30px;
   position: relative;
@@ -44,7 +44,7 @@
     border-radius: 50%;
     top: 0;
     left: 0;
-    border: 1px solid $bcg-color-white;
+    border: 1px solid var(--circle);
     width: 585px;
     height: 585px;
   }
@@ -89,9 +89,9 @@
 }
 
 .spoiler__item {
-  background: $bcg-color-light-grey;
+  background: var(--spoiler-item);
   border-radius: 10px;
-  transition: $transition-duration;
+  transition: var(--transition-duration);
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -99,7 +99,7 @@
 
   &:focus,
   &:hover {
-    border: 1px solid $bcg-color-green;
+    border: 1px solid var(--bcg-color-green);
   }
 }
 
@@ -118,17 +118,17 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 177%;
-  color: $text-color-white;
+  color: var(--spoiler-label);
   padding: 24px 30px;
 }
 /* вид текста .spoiler__label при активном переключателе */
 .spoiler__hide:checked + .spoiler__label {
-  color: $text-color-green;
+  color: var(--text-color-green);
 }
 /* когда чекбокс активен показываем блоки с содержанием  */
 .spoiler__hide:checked + .spoiler__label + .spoiler__text {
   display: block;
-  background: #485055;
+  background: var(--spoile--hide);
   padding: 10px;
   border-radius: 10px;
   /* чуточку анимации при появлении */
@@ -162,7 +162,7 @@
   }
 }
 .spoiler__hide + .spoiler__label:before {
-  color: $bcg-color-green;
+  color: var(--bcg-color-green);
   content: url(../../images/main-page/pathway/arrow-down.svg);
   display: block;
   float: right;

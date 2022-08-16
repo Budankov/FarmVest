@@ -6,7 +6,7 @@
   height: 100%;
   background-color: black;
   opacity: 1;
-  transition: opacity $transition-duration, visability $transition-duration;
+  transition: opacity var(--transition-duration), visability var(--transition-duration);
   z-index: 50;
 }
 
@@ -17,7 +17,7 @@
 
   & .modal {
     transform: translate(-50%, -50%) scale(1.2);
-    transition: visibility $transition-duration, transform $transition-duration;
+    transition: visibility var(--transition-duration), transform var(--transition-duration);
   }
 }
 
@@ -26,12 +26,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform $transition-duration;
+  transition: transform var(--transition-duration);
   max-width: 450px;
   max-height: 609px;
   padding: 40px;
   background: white;
-  box-shadow: $modal-border-bcg-color;
+  box-shadow: var(--modal-border-bcg-color);
   border-radius: 4px;
 
   @media screen and (max-width: 460px) {
@@ -54,15 +54,15 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid $close-icon-color;
+  border: 1px solid var(--close-icon-color);
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  transition: border-color $transition-duration;
+  transition: border-color var(--transition-duration);
 
   &:active {
     opacity: 0.8;
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 
   &:focus,

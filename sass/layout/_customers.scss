@@ -40,7 +40,7 @@
     display: flex;
     flex: 0 1 50%;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--img-bcg-color);
     border-radius: 20px;
     overflow: hidden;
 

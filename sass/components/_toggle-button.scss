@@ -1,0 +1,31 @@
+.no-js .user-toggle {
+  display: none;
+}
+
+.user-toggle {
+  max-width: 20rem;
+  text-align: center;
+}
+
+.toggle-button {
+  display: inline-flex;
+  background: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 16px 14px;
+  transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+.toggle-button__icon {
+  background: var(--button-icon);
+  width: 1.2em;
+  height: 1.2em;
+  filter: var(--button-icon-filter);
+  transform: translateY(1px); /* Optical adjustment */
+  transition: filter 500ms ease-in-out;
+}

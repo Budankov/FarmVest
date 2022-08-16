@@ -48,7 +48,7 @@
   // .hw-left-section__icon
   &__icon {
     padding: 16px;
-    background: $how-works-bcg-icon-color;
+    background: var(--how-works-bcg-icon-color);
     border-radius: 50%;
     margin-right: 32px;
   }
@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $how-works-bcg-color;
+  background-color: var(--img-bcg-color);
   border-radius: 20px;
   padding: 86px 30px;
   position: relative;
@@ -86,7 +86,7 @@
     border-radius: 50%;
     top: 0;
     left: 0;
-    border: 1px solid $bcg-color-white;
+    border: 1px solid var(--circle);
     width: 585px;
     height: 585px;
   }

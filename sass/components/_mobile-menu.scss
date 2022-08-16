@@ -1,7 +1,7 @@
 .mobile-menu {
   position: fixed;
-  background-color: $bcg-color-grey;
-  box-shadow: $mobile-box-shadow;
+  background-color: var(--bcg-color-grey);
+  box-shadow: var(--mobile-box-shadow);
   top: 0;
   right: -110%;
   width: 100%;
@@ -10,7 +10,7 @@
   z-index: 10;
   justify-content: space-between;
 
-  transition: right $transition-duration;
+  transition: right var(--transition-duration);
 
   &.is-open {
     right: 0%;
@@ -37,12 +37,12 @@
 }
 
 .mobile-menu__icons {
-  fill: $bcg-color-white;
+  fill: var(--bcg-color-white);
 
   &:focus,
   &:hover {
-    fill: $bcg-color-green;
-    transition: $transition-duration;
+    fill: var(--bcg-color-green);
+    transition: var(--transition-duration);
   }
 }
 

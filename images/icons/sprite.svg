@@ -5,7 +5,7 @@
     </symbol>
 
     <symbol id="check" viewBox="0 0 42 32">
-      <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
+      <path fill="#fff" style="fill: $color1, #fff); stroke: $color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
     </symbol>
 
     <symbol id="email" viewBox="0 0 32 32">
@@ -41,7 +41,7 @@
     </symbol>
 
     <symbol id="hero-svg-icon-3" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M31.059 16c0 8.317-6.742 15.059-15.059 15.059s-15.059-6.742-15.059-15.059c0-8.317 6.742-15.059 15.059-15.059s15.059 6.742 15.059 15.059z"></path>
+      <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M31.059 16c0 8.317-6.742 15.059-15.059 15.059s-15.059-6.742-15.059-15.059c0-8.317 6.742-15.059 15.059-15.059s15.059 6.742 15.059 15.059z"></path>
     </symbol>
 
     <symbol id="hero-svg-icon-4" viewBox="0 0 32 32">
@@ -54,14 +54,14 @@
       <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
     </symbol>
 
-    <symbol id="hero-svg-icon-6" viewBox="0 0 35 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8649" d="M17.297 1.399l3.569 10.985h11.551l-9.345 6.789 0.097 0.299 3.472 10.686-9.345-6.789-9.345 6.789 3.569-10.985-9.345-6.789h11.551l0.097-0.299 3.472-10.686z"></path>
+    <symbol id="hero-svg-icon-6" viewBox="0 0 32 32">
+      <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M16 2.494l3.302 10.161h10.684l-8.644 6.28 0.090 0.276 3.212 9.885-8.644-6.28-8.644 6.28 3.302-10.161-8.644-6.28h10.684l0.090-0.276 3.212-9.885z"></path>
     </symbol>
 
     <symbol id="hero-svg-icon-7" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M9.333 24v-14.597c-0-0.31 0.103-0.612 0.293-0.857s0.456-0.421 0.756-0.499c0.3-0.078 0.618-0.054 0.903 0.069s0.522 0.336 0.672 0.607l8.085 14.555c0.151 0.271 0.387 0.485 0.672 0.607s0.603 0.146 0.903 0.069c0.3-0.078 0.566-0.253 0.756-0.499s0.293-0.547 0.293-0.857v-14.597"></path>
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 13.333h18.667"></path>
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 18.667h18.667"></path>
+      <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M9.333 24v-14.597c-0-0.31 0.103-0.612 0.293-0.857s0.456-0.421 0.756-0.499c0.3-0.078 0.618-0.054 0.903 0.069s0.522 0.336 0.672 0.607l8.085 14.555c0.151 0.271 0.387 0.485 0.672 0.607s0.603 0.146 0.903 0.069c0.3-0.078 0.566-0.253 0.756-0.499s0.293-0.547 0.293-0.857v-14.597"></path>
+      <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 13.333h18.667"></path>
+      <path fill="none" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6.667 18.667h18.667"></path>
     </symbol>
 
   </defs>

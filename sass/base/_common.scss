@@ -1,7 +1,7 @@
 body {
-  background-color: $bcg-color-grey;
-  color: $text-color-white;
-  font-family: $font-spartan;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-spartan);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
