@@ -999,6 +999,10 @@ ol {
             column-gap: 108px;
   }
 }
+.company-list__icon {
+  fill: currentColor;
+}
+
 @media screen and (max-width: 768px) {
   .how-works {
     padding-top: 50px;

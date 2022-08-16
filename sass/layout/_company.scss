@@ -30,4 +30,8 @@
   &__item {
     @extend %list;
   }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
