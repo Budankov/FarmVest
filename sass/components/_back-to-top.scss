@@ -1,6 +1,6 @@
 #back-to-top {
   display: inline-block;
-  background-color: rgba(0, 128, 0, 0.5);
+  background-color: var(--back-to-top-color);
   width: 60px;
   height: 60px;
   text-align: center;
@@ -21,16 +21,16 @@
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #23b123;
+  color: var(--back-to-top-after);
 }
 
 #back-to-top:hover {
   cursor: pointer;
-  background-color: rgba(0, 128, 0, 0.2);
+  background-color: var(--back-to-top-hover);
 }
 
 #back-to-top:active {
-  background-color: rgba(0, 128, 0, 0.2);
+  background-color: var(--back-to-top-hover);
 }
 
 #back-to-top.show {

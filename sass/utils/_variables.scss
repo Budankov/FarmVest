@@ -54,6 +54,7 @@
   --how-works-bcg-icon-color: rgba(0, 128, 0, 0.1);
   --how-works-bcg-color: rgba(255, 255, 255, 0.05);
   --img-bcg-color: rgba(0, 128, 0, 0.05);
+  --hw-icon-bcg-color: #008000;
 
   // Pathway
   --spoiler-item: rgba(0, 128, 0, 0.05);
@@ -74,6 +75,11 @@
   // Footer
   --footer-bcg-color: rgba(242, 248, 242, 0.5);
   --footer-bcg-color-dark: rgba(53, 64, 70, 0.5);
+  --footer-logo-color: #263238;
+  --footer-border-color: rgba(38, 50, 56, 0.31);
+  --footer-border-color-dark: rgba(255, 255, 255, 0.42);
+  --follow-us-icon: #ffffff;
+  --follow-us-bcg-icon: #008000;
 
   // Modal
   --backdrop-bcg-color: rgba(0, 0, 0, 0.2);
@@ -89,6 +95,14 @@
   //Mobile menu
   --mobile-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  // Back-to-top
+  --back-to-top-color: rgba(0, 128, 0, 0.2);
+  --back-to-top-after: #008000;
+  --back-to-top-hover: rgba(21, 163, 21, 0.55);
+  --back-to-top-color-dark: rgba(0, 128, 0, 0.2);
+  --back-to-top-after-dark: #23b123;
+  --back-to-top-hover-dark: rgba(0, 128, 0, 0.5);
 
   // Временно
   --color-dark: #263238;
@@ -144,6 +158,14 @@
     --footer-bcg-color: var(--footer-bcg-color-dark);
     --link-after-hover: var(--bcg-color-white);
     --hero-icon-color: var(--bcg-color-white);
+    --hw-icon-bcg-color: var(--bcg-color-green);
+    --footer-logo-color: var(--bcg-color-white);
+    --footer-border-color: var(--footer-border-color-dark);
+    --follow-us-icon: var(--bcg-color-green);
+    --follow-us-bcg-icon: var(--bcg-color-white);
+    --back-to-top-color: var(--back-to-top-color-dark);
+    --back-to-top-after: var(--back-to-top-after-dark);
+    --back-to-top-hover: var(--back-to-top-hover-dark);
   }
 }
 
@@ -170,4 +192,12 @@
   --footer-bcg-color: var(--footer-bcg-color-dark);
   --link-after-hover: var(--bcg-color-white);
   --hero-icon-color: var(--bcg-color-white);
+  --hw-icon-bcg-color: var(--bcg-color-green);
+  --footer-logo-color: var(--bcg-color-white);
+  --footer-border-color: var(--footer-border-color-dark);
+  --follow-us-icon: var(--bcg-color-green);
+  --follow-us-bcg-icon: var(--bcg-color-white);
+  --back-to-top-color: var(--back-to-top-color-dark);
+  --back-to-top-after: var(--back-to-top-after-dark);
+  --back-to-top-hover: var(--back-to-top-hover-dark);
 }

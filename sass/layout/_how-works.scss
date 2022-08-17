@@ -47,10 +47,7 @@
   }
   // .hw-left-section__icon
   &__icon {
-    padding: 16px;
-    background: var(--how-works-bcg-icon-color);
-    border-radius: 50%;
-    margin-right: 32px;
+    fill: var(--hw-icon-bcg-color);
   }
   // .hw-left-section__title
   &__title {
@@ -62,6 +59,16 @@
   // .hw-left-section__text
   &__text {
   }
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--how-works-bcg-icon-color);
+  border-radius: 50%;
+  padding: 27px;
+  margin-right: 32px;
 }
 
 .hw-right-section {
