@@ -67,11 +67,11 @@
 
   &:focus,
   &:hover {
-    border-color: red;
+    border-color: var(--bcg-color-green);
   }
 
   &:focus .modal__icon-close,
   &:hover .modal__icon-close {
-    fill: red;
+    fill: var(--bcg-color-green);
   }
 }
