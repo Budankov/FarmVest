@@ -1,6 +1,6 @@
 .mobile-menu {
   position: fixed;
-  background-color: var(--bcg-color-grey);
+  background-color: var(--mobile-menu-color);
   box-shadow: var(--mobile-box-shadow);
   top: 0;
   right: -110%;
@@ -37,7 +37,7 @@
 }
 
 .mobile-menu__icons {
-  fill: var(--bcg-color-white);
+  fill: var(--burger-color);
 
   &:focus,
   &:hover {
@@ -59,4 +59,60 @@
   .icon-menu {
     display: none;
   }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-pages {
+  // .menu-pages__item
+  &__item {
+    @extend %list;
+  }
+  // .menu-pages__link
+  &__link {
+    @extend %link;
+    font-family: var(--font-lato);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.22;
+    color: var(--text-color);
+    transition: color var(--transition-duration);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--link-after-hover);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    &:focus,
+    &:hover {
+      color: var(--text-color-green);
+    }
+  }
+}
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.button {
+}
+.button-transparent {
 }
