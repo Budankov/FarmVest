@@ -1596,7 +1596,7 @@ ol {
 }
 .spoiler__hide + .spoiler__label:before {
   color: var(--bcg-color-green);
-  content: url(../../images/main-page/pathway/arrow-down.svg);
+  content: url(../images/main-page/pathway/arrow-down.svg);
   display: block;
   float: right;
   font-size: 24px;
@@ -1610,7 +1610,7 @@ ol {
 }
 
 .spoiler__hide:checked + .spoiler__label:before {
-  content: url(../../images/main-page/pathway/arrow-up.svg);
+  content: url(../images/main-page/pathway/arrow-up.svg);
 }
 
 @media screen and (max-width: 768px) {
